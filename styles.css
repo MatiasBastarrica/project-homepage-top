@@ -60,8 +60,7 @@ h6 {
 
 body {
   font-family: "Roboto", sans-serif;
-  display: flow-root;
-  overflow: hidden;
+  /* display: flow-root; */
 }
 
 h1,
@@ -72,18 +71,23 @@ h3 {
 
 /* ### ABOUT ME SECTION ### */
 
-body::before {
+.bg-triangle {
   position: absolute;
+  max-width: 100vw;
   top: 0;
   left: 0;
+  overflow: hidden;
+}
+
+.bg-triangle::before {
   z-index: -1;
   content: "";
-  width: 0;
-  height: 0;
-  border-width: 350px 550px 0 0;
-  border-color: #0891b2 transparent transparent transparent;
-  border-style: solid;
-  display: inline-block;
+  width: 350px;
+  height: 400px;
+  background-color: #0891b2;
+  display: block;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
 .about-me-container {
