@@ -247,9 +247,9 @@ footer svg {
 
 /* ### MEDIA QUEIRES ### */
 
-/* ## HEADER ## */
-
 @media (min-width: 650px) {
+  /* ## HEADER ## */
+
   .profile-picture-container {
     max-width: 55vw;
     float: left;
@@ -280,5 +280,18 @@ footer svg {
 
   .about-me-social-icons-container {
     margin-inline: auto 0;
+  }
+
+  /* ### PROJECTS GRID ### */
+
+  main h2 {
+    text-align: start;
+    margin-inline: 4rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.5rem 2rem;
+    margin-inline: 4rem;
   }
 }
