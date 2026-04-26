@@ -294,4 +294,25 @@ footer svg {
     gap: 4.5rem 2rem;
     margin-inline: 4rem;
   }
+
+  /* ### FOOTER ### */
+
+  footer {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem 1.5rem;
+  }
+
+  footer h2 {
+    text-align: start;
+  }
+
+  footer .icons-container {
+    align-self: flex-start;
+  }
+
+  footer img {
+    max-width: calc(50vw - 3rem);
+  }
 }

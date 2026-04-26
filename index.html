@@ -307,7 +307,17 @@
         </div>
       </div>
       <div class="footer-img">
-        <img src="./assets/images/dog.jpg" alt="" />
+        <picture>
+          <source
+            media="(min-width: 500px)"
+            srcset="./assets/images/dog-footer-tablet.jpg"
+          />
+          <source
+            media="(min-width: 1500px)"
+            srcset="./assets/images/dog-footer-desktop.jpg"
+          />
+          <img src="./assets/images/dog-footer-mobile.jpg" alt="" />
+        </picture>
       </div>
     </footer>
   </body>
