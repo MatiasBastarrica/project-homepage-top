@@ -101,12 +101,11 @@ header {
   margin-inline: 2rem;
 }
 
-.about-me-container img {
-  /* max-width: 500px; */
+.about-me-image img {
   box-shadow: 5px 5px 12px #48484893;
 }
 
-.profile-picture-container {
+.about-me-image {
   position: relative;
 }
 
@@ -249,13 +248,26 @@ footer svg {
 
 @media (min-width: 650px) {
   /* ## HEADER ## */
+  header {
+    position: relative;
+  }
 
-  .profile-picture-container {
-    max-width: 55vw;
+  header::before {
+    content: "";
+    display: block;
+    height: 26vw;
     float: left;
-    transform: translate(-74px, -140px);
-    margin-inline-end: -55px;
-    margin-block-end: -135px;
+    width: 47vw;
+    max-width: 401px;
+    max-height: 228px;
+  }
+
+  .about-me-image {
+    width: 55vw;
+    max-width: 455px;
+    position: absolute;
+    top: -60px;
+    left: -50px;
   }
 
   header {
@@ -264,6 +276,9 @@ footer svg {
     box-shadow: 5px 5px 12px #5655556d;
     margin-inline: 4rem;
     padding: 4rem 1.5rem 1.5rem;
+    max-width: 850px;
+    width: 90%;
+    margin-inline: auto;
   }
 
   h1 {
@@ -314,5 +329,43 @@ footer svg {
 
   footer img {
     max-width: calc(50vw - 3rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  /* ## HEADER ## */
+
+  header {
+    max-width: 1600px;
+    margin-inline: auto;
+    background-color: unset;
+    box-shadow: unset;
+    display: flex;
+    align-items: center;
+  }
+
+  header::before {
+    display: none;
+  }
+
+  .about-me-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 35vw;
+    flex-shrink: 0;
+  }
+
+  h1 {
+    right: unset;
+    top: unset;
+    bottom: 0;
+    left: 1.5rem;
+  }
+
+  .about-me-content {
+    background-color: white;
+    box-shadow: 5px 5px 12px #5655556d;
+    padding: 3rem 2rem 2rem 1rem;
   }
 }
