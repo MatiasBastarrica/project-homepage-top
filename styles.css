@@ -368,4 +368,18 @@ footer svg {
     box-shadow: 5px 5px 12px #5655556d;
     padding: 3rem 2rem 2rem 1rem;
   }
+
+  /* ## PROJECTS GRID ## */
+
+  main h2 {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    max-width: 1400px;
+    margin-inline: auto;
+  }
 }
