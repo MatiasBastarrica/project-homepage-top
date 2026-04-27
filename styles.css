@@ -391,6 +391,7 @@ footer address svg {
   main h2 {
     width: 90%;
     margin-inline: auto;
+    max-width: 1400px;
   }
 
   .projects-grid {
