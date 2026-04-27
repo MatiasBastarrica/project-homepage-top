@@ -231,6 +231,7 @@ footer {
 
 footer p {
   font-size: 1.235rem;
+  max-width: 45ch;
 }
 
 footer .icons-container {
@@ -381,5 +382,12 @@ footer svg {
     width: 90%;
     max-width: 1400px;
     margin-inline: auto;
+  }
+
+  /* ## FOOTER ## */
+
+  footer {
+    justify-content: center;
+    padding-block: 4rem;
   }
 }
