@@ -336,6 +336,10 @@ footer svg {
 @media (min-width: 1200px) {
   /* ## HEADER ## */
 
+  .bg-triangle::before {
+    height: 645px;
+  }
+
   header {
     max-width: 1600px;
     margin-inline: auto;
