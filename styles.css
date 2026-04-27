@@ -245,6 +245,18 @@ footer svg {
   height: 40px;
 }
 
+footer address {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+footer address svg {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+}
+
 /* ### MEDIA QUEIRES ### */
 
 @media (min-width: 650px) {
